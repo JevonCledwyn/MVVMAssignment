@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        //Testing if git is correct
         viewModel = ViewModelProvider(this)[MoviesViewModel::class.java]
         viewModel.getNowPlaying(Const.API_KEY, "en-US",1)
 
